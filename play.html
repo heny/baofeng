@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/play.css" type="text/css">
+</head>
+<body>
+    <a href="javascript:void(0);" class="return_top"></a> <!--回到顶部-->
+    <a href="http://www.baidu.com" target="_blank" class="feedback"></a> <!--回到顶部-->
+    <!--顶部导航栏-->
+    <nav class="nav">
+        <div class="navTop">
+            <!--logo-->
+            <div class="play_navTop_logo">
+                <h1><a href="index.html" title="暴风会员">暴风会员</a></h1>
+            </div>
+            <!--左导航-->
+            <div class="leftNav">
+                <a href="javascript:void(0);" class="index">首页</a>
+                <!--左导航划过-->
+                <div class="fatherbox">
+                    <a href="javascript:void(0);" class="subNav_hover">导航</a>
+                    <div class="bigsubNav">
+                        <div class="subNav clearfix">
+                            <div class="left">
+                                <ul>
+                                    <li><a href="">剧集</a></li>
+                                    <li><a href="">电影</a></li>
+                                    <li><a href="">动漫</a></li>
+                                    <li><a href="">综艺</a></li>
+                                    <li><a href="">体育</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">教育</a></li>
+                                    <li><a href="">记录</a></li>
+                                    <li><a href="">亲子</a></li>
+                                    <li><a href="">生活</a></li>
+                                    <li><a href="">全景</a></li>
+                                </ul>
+                            </div>
+                            <div class="leftCenter">
+                                <ul>
+                                    <li><a href="">暴风十年</a></li>
+                                    <li><a href="">摇滚</a></li>
+                                    <li><a href="">奥地利</a></li>
+                                    <li><a href="">公益</a></li>
+                                </ul>
+                            </div>
+                            <div class="rightCenter">
+                                <a href=""><span></span>商城</a>
+                                <a href=""><span></span>风秀</a>
+                                <a href=""><span></span>魔镜</a>
+                                <a href=""><span></span>理财</a>
+                            </div>
+                            <div class="right">
+                                <a href="" class="DownMove">在线影视版</a>
+                                <a href="" class="lightning">闪电版</a>
+                                <span>纯正的本地视频播放器</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--搜索-->
+            <div class="play_search">
+                <input type="text" placeholder="天气预爆" class="search_text">
+                <input type="submit" class="search_btn" value="">
+            </div>
+            <!--右导航-->
+            <div class="rightNav">
+                <ul>
+                    <li>
+                        <div class="father">
+                            <!--看过-->
+                            <div class="afterSee">
+                                <div class="afterSee-top">
+                                    <h4>看过</h4>
+                                    <i>
+                                        <a href="javascript:void(0);" class="clearNote" onclick="this.parentNode.parentNode.parentNode.children[1].children[1].remove()">清空记录</a>
+                                    </i>
+                                </div>
+                                <div class="seeCont">
+                                    <p>今天</p>
+                                    <ul class="haveSeen clearfix">
+                                        <li>
+                                            <a href="javascript:void(0);" class="jiXu">
+                                                <em>叶问外传:张天志</em>
+                                                <i>继续看</i>
+                                                <i class="closeSee" onclick="this.parentNode.parentNode.style.display='none'">&nbsp;&nbsp;X</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);"><span class="see"></span>看过</a>
+                        </div>
+                    </li> <!--看过-->
+                    <li>
+                        <div class="collectFather">
+                            <a href="javascript:void(0);"><span></span>收藏</a>
+                            <div class="collectBox">
+                                <div class="collectBox_top">
+                                    <p>您的列表中暂时没有内容</p>
+                                </div>
+                                <div class="collectBox_img"></div>
+                                <a href="#" class="yourLikeMove">您喜欢的影片在这里</a>
+                            </div>
+                        </div>
+                    </li> <!--收藏-->
+                    <li>
+                        <div class="clientSide">
+                            <div class="clientSideCont">
+                                <a href="javascript:void(0);">电脑端</a>
+                                <a href="javascript:void(0);">移动端</a>
+                            </div>
+                            <a href="javascript:void(0);"><span></span>客户端</a>
+                        </div>
+                        
+                    </li><!--客户端-->
+                    <li>
+                        <div class="play_user">
+                            <a href="javascript:void(0);" class="play_login"></a>
+                            <a href="javascript:void(0);" class="play_login" onclick="this.parentNode.parentNode.parentNode.parentNode.parentNode.children[4].style.display='block',this.parentNode.parentNode.parentNode.parentNode.parentNode.children[5].style.display='block'">登录</a>/<a href="javascript:void(0);" class="play_signin" onclick="console.log(this.parentNode.parentNode.parentNode.parentNode.parentNode.children[4].style.display='block',this.parentNode.parentNode.parentNode.parentNode.parentNode.children[6].style.display='block')">注册</a>
+                        </div>
+                    </li><!--登录-->
+                </ul>
+            </div>
+            <!--全覆盖-->
+            <div class="coverAll"></div>
+            <!--登录窗口-->
+            <div class="login">
+                <div class="login_top clearfix">
+                    <a href="#"></a>
+                    <div class="loginClose" onclick="this.parentNode.parentNode.style.display='none',this.parentNode.parentNode.parentNode.children[4].style.display='none'">X</div>
+                </div>
+                <!--输入内容提示-->
+                <span class="login_prompt"></span>
+                <!--登录-->
+                <form action="#" method="GET"  class="login_left">
+                    <ul>
+                        <li>
+                            <em class="fk_user"></em>
+                            <input type="text" placeholder="手机/邮箱/用户名" name="user"></li>
+                        <li>
+                            <em class="fk_psd"></em>
+                            <input type="password" placeholder="密码" name="psd">
+                        </li>
+                        <li>
+                            <label><input type="checkbox" checked>记住我</label>
+                            <a href="#">忘记密码</a>
+                        </li>
+                        <li>
+                            <button>登录</button>
+                            <a href="#">手机验证码登录></a>
+                        </li>
+                    </ul>
+                </form>
+                <div class="login_right">
+                    <h2>使用合作账号一键登录</h2>
+                    <a href="#" class="qq">QQ登录</a>
+                    <a href="#" class="weibo">微博登录</a>
+                    <a href="#" class="weixin">微信登录</a>
+                    <a href="#" class="zhifu">支付宝登录</a>
+                    <span class="dont_user">还没暴风账号? <a href="#"> 立即注册</a></span>
+                    <a class="help" href="javascript:void(0);"><img src="images/help.png" alt=""> 遇到问题</a>
+                </div>
+            </div>
+            <!--注册窗口-->
+            <div class="signIn"> 
+                <div class="signIn_top clearfix">
+                        <a href="#"></a>
+                        <div class="signInClose" onclick="this.parentNode.parentNode.style.display='none',this.parentNode.parentNode.parentNode.children[4].style.display='none'">X</div>
+                </div>
+                <span class="signIn_prompt"></span>
+                <form action="#" method="GET"  class="signIn_left clearfix">
+                    <ul class="adminSignIn">
+                        <li>
+                            <em class="fk_user"></em>
+                            <input type="text" placeholder="输入手机号" name="user"></li>
+                        <li>
+                            <em class="fk_psd"></em>
+                            <input type="text" name="psd" placeholder="输入密码">
+                            <em class="judge"></em>
+                        </li>    
+                        <li>
+                            <em class="fk_code"></em>
+                            <input type="text" name="code" placeholder="输入右侧验证码"><span class="getCode"></span><a href="javascript:void(0)" class="next"></a>
+                        </li>
+                        <li>
+                            <em class="fk_message"></em>
+                            <input type="text" name="message" placeholder="输入短信验证码"><button class="getMessage">免费获取短信</button>
+                        </li>
+                        <li><input type="submit" value="注 册"></li>
+                        <li>
+                            <input type="checkbox" checked><a href="#"> 我同意 《暴风影音注册协议》</a>
+                        </li>
+                    </ul>
+                </form>
+                <div class="signIn_right">
+                    <h2>使用合作账号一键登录</h2>
+                    <a href="#" class="qq">QQ登录</a>
+                    <a href="#" class="weibo">微博登录</a>
+                    <a href="#" class="weixin">微信登录</a>
+                    <a href="#" class="zhifu">支付宝登录</a>
+                    <span class="dont_user">还没暴风账号? <a href="#"> 立即注册</a></span>
+                    <a class="help" href="javascript:void(0);"><img src="images/help.png" alt=""> 遇到问题</a>
+                </div>
+            </div><!--注册结束标签-->
+        </div><!--navtop结束-->
+    </nav>
+    <!--播放界面-->
+    <div class="center100">
+        <div class="playContent">
+            <!--标题部分-->
+            <div class="move_top">
+                <div class="move-title-left">
+                    <h2>叶问外传:张天志</h2>
+                    <a href="">电影</a><i>&nbsp;&nbsp;>&nbsp;&nbsp;</i>
+                    <a href="">内地</a><i>&nbsp;&nbsp;>&nbsp;&nbsp;</i>
+                    <a href="">动作</a><i>&nbsp;&nbsp;>&nbsp;&nbsp;</i>
+                    <a href="">叶问外传:张天志</a>
+                </div>
+            </div>
+            <!--中间播放部分-->
+            <div class="move_center clearfix">
+                <!--电影播放器-->
+                <div class="movePlayer"></div>
+                <!--侧边栏信息-->
+                <div class="play_menu_box">
+                    <div class="menu-tab-box"><!--辅助盒子-->
+                        <div class="movie_num_box">
+                            <!--顶部主图-->
+                            <div class="zhengPian clearfix">
+                                <img src="images/baofengplay/zhengpian.jpg" alt="">
+                                <i class="vip-icon"></i>
+                                <div class="right-message">
+                                    <h4>叶问外传:张天志</h4>
+                                    <p>正义中的胜负抗衡</p>
+                                    <a href="#">
+                                        <i>5元 </i>买单片
+                                    </a>
+                                    <em class="pingFen">9.1</em>
+                                </div>
+                            </div>
+                            <!--开通vip-->
+                            <a href="#" class="vip-start-free">开通暴风VIP 免费看</a>
+                            <!--二维码-->
+                            <img src="images/baofengplay/paycode.jpg" alt="" class="paycode">
+                            <p class="saoYisao">扫一扫，轻松开会员</p>
+                            <!--推荐列表-->
+                            <div class="vip-recommend-list">
+                                <h4 class="list-title">精彩推荐：</h4>
+                                <dl>
+                                    <dd class="clearfix">
+                                        <a href="#"><img src="images/baofengplay/tuij1.jpg" alt=""></a>
+                                        <i class="vip-icon"></i>
+                                        <div class="vip-recommend-info">
+                                            <p><a href="#">美人鱼2016</a></p>
+                                            <p><a href="#">城管大战美人鱼</a></p>
+                                        </div>
+                                    </dd>
+                                    <dd class="clearfix">
+                                        <a href="#"><img src="images/baofengplay/tuij2.jpg" alt=""></a>
+                                        <i class="vip-icon"></i>
+                                        <div class="vip-recommend-info">
+                                            <p><a href="#">美人鱼2016</a></p>
+                                            <p><a href="#">城管大战美人鱼</a></p>
+                                        </div>
+                                    </dd>
+                                    <dd class="clearfix">
+                                        <a href="#"><img src="images/baofengplay/tuij3.jpg" alt=""></a>
+                                        <i class="vip-icon"></i>
+                                        <div class="vip-recommend-info">
+                                            <p><a href="#">美人鱼2016</a></p>
+                                            <p><a href="#">城管大战美人鱼</a></p>
+                                        </div>
+                                    </dd>
+                                    <dd class="clearfix">
+                                        <a href="#"><img src="images/baofengplay/tuij4.jpg" alt=""></a>
+                                        <i class="vip-icon"></i>
+                                        <div class="vip-recommend-info">
+                                            <p><a href="#">美人鱼2016</a></p>
+                                            <p><a href="#">城管大战美人鱼</a></p>
+                                        </div>
+                                    </dd>
+                                    <dd class="clearfix">
+                                        <a href="#"><img src="images/baofengplay/tuij5.jpg" alt=""></a>
+                                        <i class="vip-icon"></i>
+                                        <div class="vip-recommend-info">
+                                            <p><a href="#">美人鱼2016</a></p>
+                                            <p><a href="#">城管大战美人鱼</a></p>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="movie-scroll-bar">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--底部功能-->
+            <div class="move-footer clearfix">
+                <div class="playState">
+                    <!--左边按钮-->
+                    <div class="playState-left">
+                        <a href="javascript:void(0);" title="赞" class="good">
+                            <em>39</em>
+                        </a>
+                        <a href="javascript:void(0);" title="踩" class="dislike">
+                            <em>31</em>
+                        </a>
+                        <a href="javascript:void(0);" title="收藏" class="collection">
+                            <em>收藏</em>
+                        </a>
+                    </div>
+                    <!--右边按钮-->
+                    <div class="playState-right">
+                        <!--下载-->
+                        <div class="down-box" onmouseover="this.children[1].style.display='block'" onmouseout="this.children[1].style.display='none'">
+                            <a href="#" class="download"><em>下载</em></a>
+                            <div class="down-box-cont">
+                                <div class="down-cont-top">
+                                    <div class="down-cont-topLeft">
+                                        <p>系统未在您电脑上检测到暴风影音客户端，请安装成功后使用下载功能。</p>
+                                        <p class="play-info">若您已安装客户端，却无法下载，说明当前浏览器不支持，您可以在客户端上查找并下载此视频。</p>
+                                    </div>
+                                    <a href="" title="马上安装" class="play-start-up">马上安装</a>
+                                </div>
+                                <div class="down-cont-cent">
+                                    请选择要下载的清晰度及格式
+                                    <i onclick="this.parentNode.parentNode.style.display='none'">X</i>
+                                </div>
+                                <div class="down-cont-foot clearfix">
+                                    <div class="down-foot-left">
+                                        <div class="foot-left-top clearfix">
+                                            <div class="comput-icon"></div>
+                                            <h6>电脑观看</h6>
+                                            <p>暴风播放器专属播放</p>
+                                        </div>
+                                        <div class="foot-down-style">
+                                            <a href="">480P 标清下载</a>
+                                            <a href="">720P 高清下载</a>
+                                            <a href="">1080P 超清下载</a>
+                                        </div>
+                                        <div class="foot-record">
+                                            <span>未下载：<i>0</i></span>
+                                            <span>已下载：<i>0</i></span>
+                                            <span>查看我的下载</span>
+                                        </div>
+                                    </div>
+                                    <div class="down-foot-right clearfix">
+                                        <div class="down-see-top">
+                                            <span class="phone-watch-icon"></span>
+                                            <h6>手机观看</h6>
+                                            <a href="">下载手机客户端</a>
+                                        </div>
+                                        <div class="down-see-top">
+                                            <span class="phone-pad-icon"></span>
+                                            <h6>平板电脑观看</h6>
+                                            <a href="">下载Pad客户端</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--分享盒子-->
+                        <div class="share-box" onmouseover="this.children[1].style.display='block'" onmouseout="this.children[1].style.display='none'">
+                            <a href="javascript:void(0);" class="share"><em>分享</em></a>
+                            <div class="share-box-cont">
+                                <a href="javascript:void(0);" title="qq"></a>
+                                <a href="javascript:void(0);" title="kongjian"></a>
+                                <a href="javascript:void(0);" title="txweibo"></a>
+                                <a href="javascript:void(0);" title="weibo"></a>
+                                <i class="close" onclick="this.parentNode.style.display='none'">X</i>
+                            </div>
+                        </div>
+                        <!--收藏盒子-->
+                        <div class="story-box" onmouseover="this.children[1].style.display='block'" onmouseout="this.children[1].style.display='none'">
+                            <a href="javascript:void(0);" class="story"><em>剧透</em></a>
+                            <div class="story-box-cont clearfix">
+                                <h2>叶问外传:张天志</h2>
+                                <span class="play-score-right">9.1</span>
+                                <p class="details-info-left">
+                                    <span>地区:</span><a href="">内地</a><i>2018</i>
+                                </p>
+                                <p class="details-info-right">
+                                    <span>类型:</span><a href="">动作</a>
+                                </p>
+                                <p class="details-info-left">
+                                    <span>导演:</span><a href="">袁和平</a>
+                                </p>
+                                <p class="details-info-right">
+                                    <span>主演:</span><a href="">谭耀文</a><a href="">托尼·贾</a><a href="">Dave Batista</a>
+                                </p>
+                                <p class="details-info-cont"><span>简介:</span>作为《叶问》系列影片，电影《叶问外传：张天志》延续了《叶问3》的故事，讲述了同为咏春传人的张天志在比武惜败叶问后，决意放下功夫、远离江湖纷争，但面对接踵而至的连番挑衅，面对家国大义遭受的恶意侵犯，决定重拾咏春惩戒毒贩、“以武之道”捍卫民族道义尊严的故事。张晋联合杨紫琼、托尼·贾、戴夫·巴蒂斯塔、郑嘉颖等中外最强功夫打星阵容，为观众呈现咏春、泰拳、西洋拳、洪拳、少林等中外功夫的“硬杠”对抗。影片突破银幕上常见的英雄形象，不仅让观众看到一名“失意英雄”的重新崛起，更能在一场场精心设计的打戏中体会高手间的彼此试探、挚友间的切磋较量、正义中的胜负抗衡……</p>
+                                <i class="close" onclick="this.parentNode.style.display='none'">X</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="play-down">暴风影音客户端下载</a>
+            </div>
+        </div>
+    </div>
+    <!--广告-->
+    <div class="play-adv clearfix">
+        <div class="play-adv-left">
+
+        </div>
+        <div class="play-adv-right">
+            <a href="javascript:void(0);"><img src="images/baofengplay/banner1.jpg" alt=""></a>
+        </div>
+    </div>
+    <!--底部分区-->
+    <div class="play-part clearfix">
+        <!--左边推荐部分-->
+        <div class="play-part-left clearfix">
+            <!--猜你喜欢-->
+            <div class="guess-like">
+                <div class="guess-like-tit">
+                    <h3 class="like-module-tit">猜你喜欢</h3>
+                </div>
+                <ul class="guess-like-cont clearfix">
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess1.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">摔跤吧!爸爸</a>
+                            <span class="guess-movie-score">9.6</span>
+                        </p>
+                        <p>慈父与魔鬼教练自由切换</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess2.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">大宅男</a>
+                            <span class="guess-movie-score">7.3</span>
+                        </p>
+                        <p>备胎男人最命好</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess3.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">飞来的鬼子</a>
+                            <span class="guess-movie-score">3.9</span>
+                        </p>
+                        <p>鬼子穿越爆笑登场</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess4.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">血战上海滩2</a>
+                            <span class="guess-movie-score">3.9</span>
+                        </p>
+                        <p>上海滩风云再起</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess5.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">羞羞的铁拳</a>
+                            <span class="guess-movie-score">7.7</span>
+                        </p>
+                        <p>艾伦马丽互换灵魂</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess6.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">玩的就是艳遇分集版</a>
+                            <span class="guess-movie-score">6.3</span>
+                        </p>
+                        <p>单身狗洞房爱爱囧事</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess7.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">斗地主</a>
+                            <span class="guess-movie-score">7.4</span>
+                        </p>
+                        <p>为救情人用斗地主</p>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/baofengplay/guess8.jpg" alt=""></a>
+                        <p class="clearfix">
+                            <a href="" class="guess-movie-tit">野人族女王</a>
+                            <span class="guess-movie-score">3.9</span>
+                        </p>
+                        <p>原始森林探秘食人族</p>
+                    </li>
+                </ul>
+            </div>
+            <!--热门推荐-->
+            <div class="rcmd-hot">
+                <div class="rcmd-hot-tit clearfix">
+                    <h3 class="rcmd-hot-tit">热门推荐</h3>
+                    <a href="">更多>></a>
+                </div>
+                <ul class="rcmd-hot-cont">
+                    <li><a href="" title="开封府"><img src="images/baofengplay/recomend1.jpg" alt=""></a><i>开封府</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="萌鸡小学堂"><img src="images/baofengplay/recomend2.jpg" alt=""></a><i>萌鸡小学堂</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="魔都风云"><img src="images/baofengplay/recomend3.jpg" alt=""></a><i>魔都风云</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="遍地英雄"><img src="images/baofengplay/recomend4.jpg" alt=""></a><i>遍地英雄</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="娘亲舅大"><img src="images/baofengplay/recomend5.jpg" alt=""></a><i>娘亲舅大</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="生死线"><img src="images/baofengplay/recomend6.jpg" alt=""></a><i>生死线</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="金战"><img src="images/baofengplay/recomend7.jpg" alt=""></a><i>金战</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="可可小爱科普系列：第2季"><img src="images/baofengplay/recomend8.jpg" alt=""></a><i>可可小爱科普系列：第2季</i><span class="list-boxshow"></span></li>
+                    <li><a href="" title="战狼2"><img src="images/baofengplay/recomend9.jpg" alt=""></a><i>战狼2</i><span class="list-boxshow"></span></li>
+                </ul>
+            </div>
+            <!--电影榜-->
+            <div class="ranking-list">
+                <div class="ranking-hot-tit clearfix">
+                    <h3 class="ranking-module-tit">电影榜</h3>
+                    <a href="" class="more">更多>></a>
+                </div>
+                <ul class="ranking-list-cont">
+                    <li>
+                        <div class="big-img-list" style="display: block">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking1.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">1</span>小悟空</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list" style="display: none">
+                            <span class="small-move-num">1</span>
+                            <a href="javascript:void(0);">小悟空</a>
+                            <span class="small-move-score">7.8</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking2.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">2</span>龙族少年</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">2</span>
+                            <a href="javascript:void(0);">龙族少年</a>
+                            <span class="small-move-score">4.9</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking3.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">3</span>恐怖浴室</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">3</span>
+                            <a href="javascript:void(0);">恐怖浴室</a>
+                            <span class="small-move-score">5</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking4.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">4</span>神谕通天</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">4</span>
+                            <a href="javascript:void(0);">神谕通天</a>
+                            <span class="small-move-score">4.7</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking5.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">5</span>第七个小矮人</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">5</span>
+                            <a href="javascript:void(0);">第七个小矮人</a>
+                            <span class="small-move-score">8.4</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking6.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">6</span>龙泉沟</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">6</span>
+                            <a href="javascript:void(0);">龙泉沟</a>
+                            <span class="small-move-score">4.7</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking7.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">7</span>细思极恐</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">7</span>
+                            <a href="javascript:void(0);">细思极恐</a>
+                            <span class="small-move-score">4</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking8.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">8</span>七号公馆</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">8</span>
+                            <a href="javascript:void(0);">七号公馆</a>
+                            <span class="small-move-score">4.2</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking9.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">9</span>怒火警探</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">9</span>
+                            <a href="javascript:void(0);">怒火警探</a>
+                            <span class="small-move-score">7.9</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-img-list">
+                            <a href="javascript:void(0);">
+                                <img src="images/baofengplay/ranking10.jpg" alt="">
+                            </a>
+                            <div class="hot-box-shadow">
+                                <a href="javascript:void(0);"><span class="hot-move-num">10</span>庆祝改革开放40周</a>
+                            </div>
+                        </div>
+                        <div class="small-img-list">
+                            <span class="small-move-num">10</span>
+                            <a href="">庆祝改革开放40周</a>
+                            <span class="small-move-score">5.2</span>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!--右边评论部分-->
+        <div class="play-part-right clearfix">
+            <div class="part-com-tit clearfix">
+                <h3 class="part-com-moudle">评论</h3>
+                <p class="part-com-num">(共<i>5</i>条)</p>
+                <p class="part-com-rem">还可以输入<i>140</i>字</p>
+            </div>
+            <textarea maxlength="140" class="input-com-cont" placeholder="快来吐个槽吧!"></textarea>
+            <button class="part-com-btn">发表评论</button>
+            <!-- <a href="javascript:void(0);" class="">发表评论</a> -->
+            <p class="binding-phone">评论需绑定手机号<a href="">立即绑定手机</a></p>
+            <div class="com-rank-style clearfix">
+                <ul class="com-consult">
+                    <li><a href="javascript:void(0);" class="active" onclick="this.className='active',this.parentNode.nextElementSibling.children[0].className=''">按热度</a></li>
+                    <li><a href="javascript:void(0);" onclick="this.className='active',this.parentNode.previousElementSibling.children[0].className=''">按最新</a></li>
+                </ul>
+            </div>
+            <!--评论内容-->
+            <div class="comment-cont">
+                <ul class="clearfix">
+                    <li>
+                        <img src="images/baofengplay/userhead1.jpg" alt="">
+                        <p class="user-name">孙鸿翔sunwei</p>
+                        <p class="user-speak-time">2019-03-04 18:05</p>
+                        <p class="user-speak-cont">
+                            垃圾暴风!还我的充值费,现在连观看记录都没有了!我收藏的那么多经典影片哪儿去了?哪儿去了?哪儿去了?
+                        </p>
+                        <p class="com-operate">
+                            <a href="javascript:void(0);" class="juBao">举报</a><a href="javascript:void(0);" class="zan"></a><i>4</i>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/baofengplay/userhead2.jpg" alt="">
+                        <p class="user-name">1733_9267_1</p>
+                        <p class="user-speak-time">2019-03-04 16:13</p>
+                        <p class="user-speak-cont">
+                            暴风已经不是以前的暴风了!垃圾的啥都看不了,我发誓再也不会冲会员了!
+                        </p>
+                        <p class="com-operate">
+                            <a href="javascript:void(0);" class="juBao">举报</a><a href="javascript:void(0);" class="zan"></a><i>4</i>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/baofengplay/userhead2.jpg" alt="">
+                        <p class="user-name">1318_5555_14</p>
+                        <p class="user-speak-time">2019-02-17 11:23</p>
+                        <p class="user-speak-cont">
+                            暴风影音能好吗?还是继续堕落
+                        </p>
+                        <p class="com-operate">
+                            <a href="javascript:void(0);" class="juBao">举报</a><a href="javascript:void(0);" class="zan"></a><i>4</i>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/baofengplay/userhead3.jpg" alt="">
+                        <p class="user-name">1866_0133_1</p>
+                        <p class="user-speak-time">2019-04-15 00:38</p>
+                        <p class="user-speak-cont">
+                            我看过的好片子
+                        </p>
+                        <p class="com-operate">
+                            <a href="javascript:void(0);" class="juBao">举报</a><a href="javascript:void(0);" class="zan"></a><i>4</i>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="images/baofengplay/userhead2.jpg" alt="">
+                        <p class="user-name">1577_4789_8</p>
+                        <p class="user-speak-time">2019-03-26 14:45</p>
+                        <p class="user-speak-cont">
+                            刚充值包月打都打不开郁闷.
+                        </p>
+                        <p class="com-operate">
+                            <a href="javascript:void(0);" class="juBao">举报</a><a href="javascript:void(0);" class="zan"></a><i>4</i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="turn-page clearfix">
+                <div class="turn-page-left">
+                    <input type="text" value="1">/<span>2</span>
+                    <button class="sure">确定</button>
+                </div>
+                <div class="turn-page-right">
+                    <button class="prev">上一页</button>
+                    <button class="next">下一页</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部空白盒子-->
+    <div class="blank-box"></div>
+    <!--底部分区-->
+    <footer class="footer">
+        <p class="user-help">
+            <a href="">投资者关系</a><span>|</span>
+            <a href="">影音论坛导航</a><span>|</span>
+            <a href="">加入暴风</a><span>|</span>
+            <a href="">联系我们</a><span>|</span>
+            <a href="">暴风无线产品</a><span>|</span>
+            <a href="">暴风实验室</a><span>|</span>
+            <a href="">更新历史</a><span>|</span>
+            <a href="">关于我们</a>
+        </p>
+        <p>暴风集团股份有限公司 联系电话：400-098-7846 (工作日 9:30--21:30</p>
+        <p>
+            <a href="">京ICP证070364号</a>
+            <a href="">京网文【2014】0921-221号</a>
+            <a href="">互联网药品信息服务资格证书(京)-非经营性-2008-0039</a> 
+            <a href="">广播电视节目制作经营许可证：(京)字第01166号 </a>
+        </p>
+        <p>
+            <img src="images/baofengplay/police.png" alt="" style="vertical-align: middle">
+            <a href="">京公网安备</a>
+            <a href="">11010802020226号</a>
+            <a href="">京ICP备08011423号</a>
+            <a href="">信息网络传播视听许可证号：0108298</a>
+            <a href="">营业性演出许可证</a>
+            <a href="">网络出版服务许可证</a>
+        </p>
+        <p>海淀警方预防电信诈骗宣传  首都网络安全日</p>
+    </footer>
+    <script src="js/play.js"></script>
+</body>
+</html>  

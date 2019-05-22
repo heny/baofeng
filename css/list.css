@@ -1,0 +1,154 @@
+@import "public.css";
+.auto,
+.list_content {
+  width: 1100px;
+  margin: 0 auto;
+}
+.list_content {
+  box-sizing: border-box;
+  background: #fff;
+}
+.list_choose {
+  padding-left: 12px;
+  height: 58px;
+  padding-top: 20px;
+}
+.list_choose ul {
+  margin-bottom: 30px;
+}
+.list_choose ul li {
+  float: left;
+}
+.list_choose ul li .active {
+  background: #0b68c8;
+  color: #fff;
+}
+.list_choose ul li a {
+  display: block;
+  padding: 0 21px;
+  color: #000;
+  line-height: 28px;
+}
+.partitions {
+  width: 1074px;
+  height: 40px;
+  border: 1px solid #dedede;
+  margin-left: 12px;
+  background: #f8f8f8;
+}
+.partitions ul li {
+  float: left;
+}
+.partitions ul li .active {
+  border-top: 4px solid #0b68c8;
+  border-right: 1px solid #dedede;
+  border-left: 1px solid #dedede;
+  margin-left: -1px;
+  line-height: 37px;
+  color: #000;
+  background: #fff;
+}
+.partitions ul li a {
+  display: block;
+  line-height: 40px;
+  padding: 0 36px;
+  font-size: 14px;
+  color: #0b68c8;
+}
+.prompt_content {
+  margin-top: 30px;
+}
+.prompt_content ul {
+  padding-bottom: 45px;
+  margin-bottom: 29px;
+  padding-left: 12px;
+  border-bottom: 1px solid #dedede;
+}
+.prompt_content ul li:not( :nth-child(5n)) {
+  margin-right: 13px;
+}
+.prompt_content ul li {
+  margin-bottom: 30px;
+  width: 205px;
+  height: 328px;
+  float: left;
+}
+.prompt_content ul li .film_img {
+  width: 270px;
+  height: 287px;
+  position: relative;
+}
+.prompt_content ul li .film_img img {
+  display: block;
+  width: 205px;
+  height: 287px;
+}
+.prompt_content ul li .film_img .vipExcg {
+  width: 75px;
+  height: 18px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background: url("../images/vip-tips.png") no-repeat 0 -19px;
+  z-index: 1;
+}
+.prompt_content ul li .film_img .vipExcf {
+  width: 72px;
+  height: 18px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background: url("../images/vip-tips.png") no-repeat -110px 0px;
+  z-index: 1;
+}
+.prompt_content ul li .film_img .hdmi {
+  width: 28px;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  font-family: "宋体";
+  position: absolute;
+  bottom: -280px;
+  right: -198px;
+  z-index: 1;
+}
+.prompt_content ul li .film_text {
+  width: 205px;
+  height: 41px;
+  position: relative;
+}
+.prompt_content ul li .film_text a {
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  display: block;
+}
+.prompt_content ul li .film_text p {
+  color: #999;
+}
+.prompt_content ul li .film_text .film_score {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  font-family: "Georgia";
+  right: -4px;
+  top: 8px;
+}
+.prompt_content ul li .film_text .film_score span {
+  font-size: 20px;
+  color: #ff6600;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.prompt_content ul li .film_text .film_score i {
+  font-size: 12px;
+  color: #ff6600;
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}

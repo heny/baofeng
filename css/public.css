@@ -1,0 +1,392 @@
+@import "reset.css";
+.auto,
+#top_nav nav,
+.menuTop,
+.foot_layer,
+.highlight_line {
+  width: 1100px;
+  margin: 0 auto;
+}
+body {
+  background: #F3F3F3;
+}
+#top_nav {
+  width: 100%;
+  min-width: 1100px;
+  background: linear-gradient(#ffffff, #e8e8e8);
+  box-shadow: 0 5px 6px #e8e8e8;
+  border-bottom: 1px solid #c7c4c5;
+}
+#top_nav nav {
+  height: 64px;
+}
+#top_nav nav .left_nav {
+  float: left;
+}
+#top_nav nav .left_nav a {
+  display: block;
+  width: 191px;
+  height: 29px;
+  margin: 18px;
+  background: url("../images/vip-logo.png") no-repeat 0 -144px;
+  text-indent: -999px;
+}
+#top_nav nav .right_nav {
+  float: right;
+  padding-right: 7px;
+}
+#top_nav nav .right_nav li {
+  line-height: 64px;
+  margin: 0 15px;
+  float: left;
+}
+#top_nav nav .right_nav li a {
+  color: #686868;
+  font-size: 12px;
+}
+#top_nav nav .right_nav li a:hover {
+  color: #1a9eff;
+}
+.login {
+  width: 543px;
+  height: 336px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px 29px 30px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 9999;
+}
+.login .user_prompt {
+  display: block;
+  height: 28px;
+}
+.login .login_left {
+  width: 315px;
+  height: 230px;
+  border-right: 1px dashed #ddd;
+  box-sizing: border-box;
+  padding: 1px 30px 65px 0px;
+  float: left;
+}
+.login .login_left li:nth-child(-n+2) input[name=user],
+.login .login_left li:nth-child(-n+2) input[name=psd] {
+  width: 282px;
+  height: 30px;
+  border: 1px solid #ddd;
+  padding-left: 32px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.login .login_left li:nth-child(-n+2) input[name=user] {
+  background: url("../images/lay.png") no-repeat 0 -40px;
+}
+.login .login_left li:nth-child(-n+2) input[name=psd] {
+  background: url("../images/lay.png") no-repeat 0 -70px;
+}
+.login .login_left li:nth-child(3) {
+  height: 42px;
+  width: 282px;
+}
+.login .login_left li:nth-child(3) label {
+  display: block;
+  float: left;
+}
+.login .login_left li:nth-child(3) a {
+  display: block;
+  float: right;
+}
+.login .login_left li:nth-child(4) button {
+  width: 284px;
+  height: 38px;
+  background: #1a9eff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+.login_top a,
+.signIn_top a {
+  float: left;
+  display: block;
+  width: 120px;
+  height: 27px;
+  background: url("../images/lay.png") no-repeat 0px 0px;
+}
+.login_top .loginClose,
+.signIn_top .loginClose,
+.login_top .signInClose,
+.signIn_top .signInClose {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #a6a6a6;
+  float: right;
+}
+.login_top .loginClose:hover,
+.signIn_top .loginClose:hover,
+.login_top .signInClose:hover,
+.signIn_top .signInClose:hover {
+  cursor: pointer;
+  color: #39abff;
+}
+.login_right,
+.signIn_right {
+  float: left;
+  width: 162px;
+  height: 230px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+.login_right h2,
+.signIn_right h2 {
+  line-height: 16px;
+  color: #999;
+}
+.login_right .qq,
+.signIn_right .qq,
+.login_right .weixin,
+.signIn_right .weixin,
+.login_right .weibo,
+.signIn_right .weibo {
+  display: block;
+  margin-top: 12px;
+  width: 100%;
+  line-height: 30px;
+  color: #fff;
+  padding-left: 57px;
+  box-sizing: border-box;
+}
+.login_right .qq,
+.signIn_right .qq {
+  background: #5bb4f5 url("../images/qq1.png") no-repeat 15px 2px;
+}
+.login_right .weixin,
+.signIn_right .weixin {
+  background: #8dc91b url("../images/weichat1.png") no-repeat 15px 2px;
+}
+.login_right .weibo,
+.signIn_right .weibo {
+  background: #e4565d url("../images/sina1.png") no-repeat 15px 2px;
+  margin-bottom: 26px;
+}
+.login_right .dont_user,
+.signIn_right .dont_user {
+  font-size: 12px;
+}
+.login_right .dont_user a,
+.signIn_right .dont_user a {
+  color: #1a9eff;
+}
+.login_right .help,
+.signIn_right .help {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ccc;
+}
+.signIn {
+  width: 543px;
+  height: 336px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px 29px 30px;
+  box-sizing: border-box;
+  z-index: 9999;
+  display: none;
+}
+.signIn .user_prompt {
+  display: block;
+  height: 28px;
+}
+.signIn .signIn_left {
+  width: 315px;
+  height: 230px;
+  border-right: 1px dashed #ddd;
+  box-sizing: border-box;
+  float: left;
+}
+.signIn .signIn_left input {
+  margin-bottom: 10px;
+}
+.signIn .signIn_left ul input[name=user],
+.signIn .signIn_left ul input[name=psd] {
+  width: 282px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  padding-left: 32px;
+  box-sizing: border-box;
+}
+.signIn .signIn_left ul input[name=user] {
+  background: url("../images/lay.png") no-repeat 0 -40px;
+}
+.signIn .signIn_left ul input[name=psd] {
+  background: url("../images/lay.png") no-repeat 0 -70px;
+}
+.signIn .signIn_left ul input[name=code],
+.signIn .signIn_left ul input[name=message] {
+  width: 140px;
+  height: 30px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  display: block;
+  float: left;
+}
+.signIn .signIn_left ul .getCode {
+  width: 66px;
+  height: 30px;
+  display: block;
+  background: springgreen;
+  border: 1px solid black;
+  float: left;
+}
+.signIn .signIn_left ul .next {
+  line-height: 30px;
+  margin-left: 16px;
+  color: #999999;
+}
+.signIn .signIn_left ul .getMessage {
+  width: 122px;
+  height: 32px;
+  border: none;
+  float: left;
+  border: 1px solid #ddd;
+  background: linear-gradient(#ffffff, #e8e8e8);
+}
+.signIn .signIn_left ul input[type=submit] {
+  width: 284px;
+  height: 38px;
+  background: #1a9eff;
+  border: none;
+  color: #fff;
+}
+.signIn .signIn_left ul li:last-child a {
+  color: #1a9eff;
+  font-size: 13px;
+}
+.menuTop {
+  height: 40px;
+  background: linear-gradient(#2c3134 0%, #2c3134 50%, #292c2d 50%, #292c2d 100%);
+  padding-left: 44px;
+  box-sizing: border-box;
+}
+.menuTop li .active {
+  background: #0b68c8;
+}
+.menuTop li a {
+  display: block;
+  font-size: 14px;
+  float: left;
+  width: 115px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+.return_top {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #dcdbdb;
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  z-index: 10;
+  display: none;
+  background: url("../images/icon_new.png") no-repeat 0 0;
+}
+.return_top:hover {
+  border: none;
+  background: url("../images/icon_new.png") no-repeat -52px 0;
+}
+.coverAll {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.highlight_line {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #fff;
+}
+.btm_links {
+  height: 100px;
+  margin-top: 55px;
+  margin-bottom: 40px;
+}
+.btm_links li:not(:last-child) {
+  margin-right: 28px;
+  border-right: 1px solid #dedede;
+}
+.btm_links .newHelpIcon {
+  background: url("../images/vip-powers.png") no-repeat 0 -111px;
+}
+.btm_links .teQuan {
+  background: url("../images/vip-powers.png") no-repeat -51px -111px;
+}
+.btm_links .payMethod {
+  background: url("../images/vip-powers.png") no-repeat -102px -111px;
+}
+.btm_links .troblem {
+  background: url("../images/vip-powers.png") no-repeat -153px -111px;
+}
+.btm_links li {
+  height: 100px;
+  width: 254px;
+  box-sizing: border-box;
+  padding-left: 48px;
+  float: left;
+}
+.btm_links li div {
+  width: 51px;
+  height: 100px;
+  margin-right: 10px;
+  float: left;
+}
+.btm_links li dl {
+  width: 144px;
+  height: 100px;
+  float: right;
+}
+.btm_links li dl dt {
+  padding: 7px 0 14px;
+  font-size: 16px;
+}
+.btm_links li dl dd {
+  font-size: 12px;
+  line-height: 18px;
+}
+.btm_links li a:hover {
+  color: #0b68c8;
+}
+.vip_other {
+  height: 220px;
+  box-sizing: border-box;
+  padding-top: 54px;
+}
+.vip_other p {
+  text-align: center;
+  color: #999;
+  line-height: 24px;
+  font-size: 12px;
+}
+.vip_other a {
+  color: #999;
+}
+.vip_other a:hover {
+  text-decoration: underline;
+}

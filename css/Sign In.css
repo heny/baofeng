@@ -1,0 +1,279 @@
+@import "reset.css";
+.img,
+.SignIn h2,
+.SignIn li:nth-child(-n+2) em,
+.SignIn li:nth-child(7) .left:before,
+.SignIn .ohter-login a[title=qq],
+.SignIn .ohter-login a[title=weibo],
+.SignIn .ohter-login a[title=weixin] {
+  background: url("../images/new-sso.png") no-repeat;
+}
+.auto,
+.top .topMain,
+.banner .bannerMain {
+  width: 960px;
+  margin: 0 auto;
+}
+body {
+  background: #f9f9f9;
+}
+.top {
+  width: 100%;
+}
+.top .topMain {
+  height: 64px;
+  padding-top: 25px;
+}
+.top .topMain h1 a {
+  display: block;
+  width: 170px;
+  height: 36px;
+  margin-bottom: 28px;
+  text-indent: -9999px;
+  background: url("../images/new-sso.png") no-repeat 0 -306px;
+}
+.banner {
+  width: 100%;
+  height: 542px;
+  background: #46a4e9 url("../images/loginbanner2.jpg");
+}
+.banner .bannerMain {
+  height: 542px;
+  background: url("../images/loginbanner1.jpg");
+  position: relative;
+}
+.footer {
+  width: 100%;
+  height: 85px;
+  padding-top: 27px;
+}
+.footer p {
+  line-height: 22px;
+  color: #999999;
+  text-align: center;
+  font-size: 14px;
+}
+.SignIn {
+  width: 332px;
+  height: 446px;
+  position: absolute;
+  top: 53px;
+  right: 0px;
+  padding: 22px 24px 0;
+  box-sizing: border-box;
+}
+.SignIn h2 {
+  width: 82px;
+  height: 19px;
+  background-position: 0px -2px;
+}
+.SignIn .code-prompt {
+  display: block;
+  height: 15px;
+  padding-top: 26px;
+  color: red;
+}
+.SignIn li:nth-child(-n+2) {
+  position: relative;
+}
+.SignIn li:nth-child(-n+2) input {
+  margin-bottom: 10px;
+  width: 284px;
+  height: 32px;
+  border: 1px solid #dddddd;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.SignIn li:nth-child(-n+2) input[name=psd] {
+  padding-right: 27px;
+}
+.SignIn li:nth-child(-n+2) em {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.SignIn li:nth-child(-n+2) .fk-name {
+  top: 1px;
+  left: 1px;
+  background-position: 2px -29px;
+}
+.SignIn li:nth-child(-n+2) .fk-psd {
+  top: 1px;
+  left: 1px;
+  background-position: -28px -30px;
+}
+.SignIn li:nth-child(-n+2) .intensity {
+  right: 4px;
+  top: 4px;
+  width: 24px;
+  height: 24px;
+  background-position: -40px -70px;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) {
+  position: relative;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) input[name=code],
+.SignIn li:nth-child(n+3):nth-child(-n+4) input[name=message] {
+  width: 140px;
+  height: 30px;
+  border: 1px solid #ddd;
+  margin-right: 20px;
+  display: block;
+  float: left;
+  padding-left: 32px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) .next {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  background: url("../images/new-sso.png") no-repeat -120px -30px;
+  margin-left: 10px;
+  color: #999999;
+  cursor: pointer;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) .getCode {
+  width: 80px;
+  height: 30px;
+  display: block;
+  border: 1px solid #ddd;
+  color: #333;
+  font-family: "宋体";
+  float: left;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) .fk_code,
+.SignIn li:nth-child(n+3):nth-child(-n+4) .fk_message {
+  width: 26px;
+  height: 26px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background: url("../images/new-sso.png") no-repeat -62px -32px;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) .fk_code {
+  top: 3px;
+  left: 2px;
+}
+.SignIn li:nth-child(n+3):nth-child(-n+4) .fk_message {
+  top: 8px;
+  left: 2px;
+}
+.SignIn li:nth-child(4) {
+  height: 34px;
+}
+.SignIn .getMessage {
+  display: block;
+  width: 124px;
+  height: 30px;
+  outline: 0;
+  float: left;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #ddd;
+  margin-bottom: 10px;
+  cursor: default;
+}
+.SignIn input[type=submit] {
+  width: 284px;
+  height: 38px;
+  background: #1a9eff;
+  border: none;
+  color: #fff;
+}
+.SignIn li:nth-child(5) {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #1a9eff;
+}
+.SignIn li:nth-child(5) input {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  background: url("../images/new-sso.png") no-repeat 0px -66px;
+}
+.SignIn li:nth-child(5) input:checked {
+  background: url("../images/new-sso.png") no-repeat -20px -66px;
+}
+.SignIn li:nth-child(5) a {
+  color: #1a9eff;
+  font-size: 13px;
+}
+.SignIn li:nth-child(5) a:nth-child(3) {
+  margin-left: 30px;
+}
+.SignIn li:nth-child(6) input[type=submit] {
+  width: 284px;
+  line-height: 38px;
+  background: #1a9eff;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  outline: 0;
+}
+.SignIn li:nth-child(7) {
+  line-height: 14px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.SignIn li:nth-child(7) .left {
+  color: #999999;
+  padding-left: 18px;
+  margin-right: 120px;
+}
+.SignIn li:nth-child(7) .left:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+  background-position: -165px -74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.SignIn .line {
+  width: 238px;
+  height: 18px;
+  border-top: 1px solid #ddd;
+  margin: 0 auto;
+  position: relative;
+}
+.SignIn .line span {
+  width: 82px;
+  line-height: 12px;
+  position: absolute;
+  top: -7px;
+  left: 78px;
+  color: #999999;
+  background: #fff;
+  text-align: center;
+}
+.SignIn .ohter-login {
+  width: 150px;
+  margin: 0 auto;
+}
+.SignIn .ohter-login a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  margin: 0 10px;
+}
+.SignIn .ohter-login a[title=qq] {
+  background-position: 0 -350px;
+}
+.SignIn .ohter-login a[title=weibo] {
+  background-position: -30px -350px;
+}
+.SignIn .ohter-login a[title=weixin] {
+  background-position: -60px -350px;
+}

@@ -55,9 +55,9 @@ if(document.cookie){
 //用户名输入框
 user.onblur = function () {
     if (!user.value.trim()) {
-        span.innerHTML = "请输入用户名！";
+        span.innerHTML = "请输入手机号！";
     } else if (!reg.phone.test(user.value)) {
-        span.innerHTML = "请输入正确的用户名！"
+        span.innerHTML = "请输入正确的手机号！"
     } else {
         span.innerHTML = "";
         css($(".getMessage"),"background","linear-gradient(#fff,#f2f2f2)");
@@ -71,7 +71,7 @@ psd.onblur = function () {
     if (!psd.value.trim()) {
         span.innerHTML = "请输入密码!";
     } else if (!reg.password.test(psd.value)) {
-        span.innerHTML = "密码输入不正确，请重新输入！";
+        span.innerHTML = "密码需要6-32位，并且英文数字组合，请重新输入！";
     } else {
         span.innerHTML = "";
     }
